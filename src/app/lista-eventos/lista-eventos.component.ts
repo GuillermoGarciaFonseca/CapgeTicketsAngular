@@ -16,9 +16,22 @@ export class ListaEventosComponent implements OnInit  {
   eventos: Evento[] = [];
 
   constructor(private router: Router, private eventoService: EventoService) {}
+  
   ngOnInit(): void {
+   this.list();
+  }
+
+  list(){
     this.eventoService.getEventos().subscribe((data) => {
-      this.eventos = data;
+      if(data){
+        this.eventos=data;
+      }
+    });
+  }
+
+  deleteEvento (evento: Evento): void {
+    this.eventoService.deleteEvento(evento).subscribe((data) => {
+      this.eventos = this.eventos.filter((e) => e !== evento);
     });
   }
 
