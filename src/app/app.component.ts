@@ -5,8 +5,6 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: true,
-  imports: [RouterOutlet, ListaEventosComponent, CommonModule],
   styleUrl: './app.component.scss'
 })
 export class AppComponent {

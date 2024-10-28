@@ -8,8 +8,7 @@ import { ConfirmDeleteDialogComponent } from '../delete-dialog/delete-dialog.com
 
 @Component({
   selector: 'app-lista-eventos',
-  templateUrl: './lista-eventos.component.html',
- 
+  templateUrl: './lista-eventos.component.html', 
   styleUrl: './lista-eventos.component.scss'
 })
 export class ListaEventosComponent implements OnInit  {

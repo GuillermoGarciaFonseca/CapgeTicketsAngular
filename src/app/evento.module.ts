@@ -15,7 +15,8 @@ import { ConfirmDeleteDialogComponent } from './delete-dialog/delete-dialog.comp
 
 
 @NgModule({
-  declarations: [AppComponent, ListaEventosComponent, ConfirmDeleteDialogComponent],
+
+  declarations: [AppComponent],
   imports: [
     CommonModule,
     EventoRoutingModule,
