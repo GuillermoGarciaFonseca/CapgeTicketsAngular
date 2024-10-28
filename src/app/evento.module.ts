@@ -11,7 +11,7 @@ import { ModificarEventosComponent } from './modificar-eventos/modificar-eventos
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [AppComponent, ListaEventosComponent],
   imports: [
     CommonModule,
     EventoRoutingModule,
