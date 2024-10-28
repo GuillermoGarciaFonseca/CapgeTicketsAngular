@@ -9,17 +9,27 @@ import { DetalleEventoComponent } from './detalle-evento/detalle-evento.componen
 import { ListaEventosComponent } from './lista-eventos/lista-eventos.component';
 import { ModificarEventosComponent } from './modificar-eventos/modificar-eventos.component';
 import { AppComponent } from './app.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import { ConfirmDeleteDialogComponent } from './delete-dialog/delete-dialog.component';
+
+
 
 @NgModule({
-  declarations: [AppComponent, ListaEventosComponent],
+  declarations: [AppComponent, ListaEventosComponent, ConfirmDeleteDialogComponent],
   imports: [
     CommonModule,
     EventoRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
+
+
     
   ],
-  providers: [HttpClient, EventoService],
-  bootstrap: [AppComponent]
+  providers: [HttpClient, EventoService,    
+  ],
+  bootstrap: [AppComponent],
+
+
 })
 export class EventoModule { }
