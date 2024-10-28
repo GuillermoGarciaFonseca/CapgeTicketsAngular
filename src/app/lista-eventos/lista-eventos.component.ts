@@ -9,7 +9,9 @@ import { ConfirmDeleteDialogComponent } from '../delete-dialog/delete-dialog.com
 @Component({
   selector: 'app-lista-eventos',
   templateUrl: './lista-eventos.component.html', 
-  styleUrl: './lista-eventos.component.scss'
+  styleUrl: './lista-eventos.component.scss',
+  standalone: true,
+  imports: [CommonModule]
 })
 export class ListaEventosComponent implements OnInit  {
   eventos: Evento[] = [];

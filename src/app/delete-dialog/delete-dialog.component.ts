@@ -19,7 +19,6 @@ export class ConfirmDeleteDialogComponent {
 
   onConfirm(): void {
     this.dialogRef.close(true); 
-    window.location.reload();
   }
 }
 

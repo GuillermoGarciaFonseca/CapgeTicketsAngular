@@ -11,18 +11,20 @@ import { ModificarEventosComponent } from './modificar-eventos/modificar-eventos
 import { AppComponent } from './app.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { ConfirmDeleteDialogComponent } from './delete-dialog/delete-dialog.component';
+import { RouterOutlet } from '@angular/router';
 
 
 
 @NgModule({
 
-  declarations: [AppComponent],
+  declarations: [AppComponent, RouterOutlet, ListaEventosComponent],
   imports: [
     CommonModule,
     EventoRoutingModule,
     HttpClientModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+ 
 
 
     
